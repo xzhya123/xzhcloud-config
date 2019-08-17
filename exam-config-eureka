@@ -9,7 +9,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: greecloud-config-eureka-client
+    name: exam-config-eureka
 
 eureka:
   instance:
@@ -21,12 +21,12 @@ eureka:
       defaultZone: http://localhost:7001/eureka/   #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址。
 ---
 server:
-  port: 7002
+  port: 7001
   
 spring:
   profiles: test
   application:
-    name: greecloud-config-eureka-client
+    name: exam-config-eureka
 
 eureka:
   instance:
