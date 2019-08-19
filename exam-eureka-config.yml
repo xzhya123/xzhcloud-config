@@ -9,7 +9,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: exam-config-eureka2
+    name: exam-eureka-config
 
 eureka:
   instance:
@@ -26,7 +26,7 @@ server:
 spring:
   profiles: test
   application:
-    name: exam-config-eureka
+    name: exam-eureka-config
 
 eureka:
   instance:
