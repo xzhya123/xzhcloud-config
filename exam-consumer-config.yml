@@ -3,7 +3,12 @@ spring:
     active:
       - dev
 ---
-server:
+spring:
+  profiles: dev   #开发环境
+  application:
+    name: exam-consumer-config-dev
+    
+    server:
   port: 80
 
 eureka:
@@ -28,4 +33,10 @@ eureka:
 feign:
   hystrix:
     enable: true     #开启feign的hystrix支持,默认是false
----
+    
+spring:
+  profiles: test  #测试环境
+  application:  
+    name: exam-consumer-config-test
+    
+#   请保存为UTF-8格式
